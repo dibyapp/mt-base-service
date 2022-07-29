@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/base?useSSL=false 
+    username: root 
+    password: WitchMYSQL
+    driverClassName: com.mysql.cj.jdbc.Driver
+    hikari:
+      max-lifetime: 45000
+      keepalive-time: 40000
+      idle-timeout: 35000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+server:
+  port: 2021
